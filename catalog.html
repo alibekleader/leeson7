@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header header-line">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <a class="logo" href="index.html">
+            <img src="images/logo.png" alt="Логотип">
+          </a>
+          <div class="header__top-info">
+            <div class="header__info-box">
+              <a class="header__info-email" href="mailto:okoprom@gmail.com">okoprom@gmail.com</a>
+              <a class="header__info-phone" href="tel:+78007073101">+7 (800) 707-31-01</a>
+            </div>
+            <div class="header__info-box">
+              <a class="header__info-delivery" href="delivery.html">Доставка и оплата</a>
+              <a class="header__info-warranty" href="warranty.html">Гарантия</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__bottom-inner">
+          <nav class="header__bottom-nav" data-nav>
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="catalog.html">Каталог</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="catalog.html">Наше производство</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="about.html">О компании</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="contacts.html">Контакты</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="delivery.html">Доставка и оплата</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="warranty.html">Гарантия</a>
+              </li>
+            </ul>
+            <button class="header__nav-btn">Запросить консультацию</button>
+          </nav>
+          <div class="header__bottom-profile">
+            <div class="header__bottom-box">
+              <a class="header__box-link" href="catalog.html#">
+                <img src="images/icons/search-icon.svg" alt="Поиск">
+              </a>
+              <a class="header__box-link" href="catalog.html#">
+                <img src="images/icons/cart-icon.svg" alt="Корзина">
+              </a>
+            </div>
+            <button class="header__box-btn">Запросить консультацию</button>
+          </div>
+          <div class="burger" data-burger>
+            <button class="burger__btn">
+              <span class="burger__line"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="top">
+      <div class="container">
+        <div class="top__inner">
+          <div class="categories__item">
+            <div class="categories__item-imgbox">
+              <img class="categories__item-img" src="images/content/categories/service.svg" alt="">
+            </div>
+            <div class="categories__item-content">
+              <div class="categories__content-name">
+                Всегда на связи
+              </div>
+              <div class="categories__content-descr">
+                Консультируем при покупке и в дальнейшем при эксплуатации нашего оборудования
+              </div>
+            </div>
+          </div>
+          <div class="categories__item">
+            <div class="categories__item-imgbox">
+              <img class="categories__item-img" src="images/content/categories/delivery.svg" alt="">
+            </div>
+            <div class="categories__item-content">
+              <div class="categories__content-name">
+                Доставка по всей России
+              </div>
+              <div class="categories__content-descr">
+                Отправим товар транспортной компанией или почтовым отправлением (оплата при получении)
+              </div>
+            </div>
+          </div>
+          <div class="categories__item">
+            <div class="categories__item-imgbox">
+              <img class="categories__item-img" src="images/content/categories/guarantee.svg" alt="">
+            </div>
+            <div class="categories__item-content">
+              <div class="categories__content-name">
+                Гарантия на всё
+              </div>
+              <div class="categories__content-descr">
+                Предоставляется гарантия сроком до 1 года со дня приобретения товара
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="products">
+      <div class="products__tabs-hidden"></div>
+      <div class="container">
+        <div class="products__top">
+          <h2 class="products__title">
+            Вся продукция
+          </h2>
+          <div class="products__top-box">
+            <span>126</span> товара
+          </div>
+        </div>
+        <div class="products__filter-box">
+          <button class="products__filter-btn" data-filter>Фильтры</button>
+        </div>
+        <div class="products__inner">
+          <div class="products__tabs">
+            <button class="products__tabs-btn" data-close></button>
+            <div class="products__tab products__tab--active">
+              <span>Вся продукция</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4H10V10H4V4ZM4 14H10V20H4V14ZM14 4H20V10H14V4ZM14 14H20V20H14V14Z" stroke="#161616"
+                  stroke-width="2" />
+              </svg>
+            </div>
+            <div class="products__tab">
+              <span>Скидки</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.5 21C16.5717 21 15.6815 20.6313 15.0251 19.9749C14.3687 19.3185 14 18.4283 14 17.5C14 16.5717 14.3687 15.6815 15.0251 15.0251C15.6815 14.3687 16.5717 14 17.5 14C18.4283 14 19.3185 14.3687 19.9749 15.0251C20.6313 15.6815 21 16.5717 21 17.5C21 18.4283 20.6313 19.3185 19.9749 19.9749C19.3185 20.6313 18.4283 21 17.5 21ZM17.5 19C17.8978 19 18.2794 18.842 18.5607 18.5607C18.842 18.2794 19 17.8978 19 17.5C19 17.1022 18.842 16.7206 18.5607 16.4393C18.2794 16.158 17.8978 16 17.5 16C17.1022 16 16.7206 16.158 16.4393 16.4393C16.158 16.7206 16 17.1022 16 17.5C16 17.8978 16.158 18.2794 16.4393 18.5607C16.7206 18.842 17.1022 19 17.5 19ZM6.5 10C6.04037 10 5.58525 9.90947 5.16061 9.73358C4.73597 9.55769 4.35013 9.29988 4.02513 8.97487C3.70012 8.64987 3.44231 8.26403 3.26642 7.83939C3.09053 7.41475 3 6.95963 3 6.5C3 6.04037 3.09053 5.58525 3.26642 5.16061C3.44231 4.73597 3.70012 4.35013 4.02513 4.02513C4.35013 3.70012 4.73597 3.44231 5.16061 3.26642C5.58525 3.09053 6.04037 3 6.5 3C7.42826 3 8.3185 3.36875 8.97487 4.02513C9.63125 4.6815 10 5.57174 10 6.5C10 7.42826 9.63125 8.3185 8.97487 8.97487C8.3185 9.63125 7.42826 10 6.5 10ZM6.5 8C6.89782 8 7.27936 7.84196 7.56066 7.56066C7.84196 7.27936 8 6.89782 8 6.5C8 6.10218 7.84196 5.72064 7.56066 5.43934C7.27936 5.15804 6.89782 5 6.5 5C6.10218 5 5.72064 5.15804 5.43934 5.43934C5.15804 5.72064 5 6.10218 5 6.5C5 6.89782 5.15804 7.27936 5.43934 7.56066C5.72064 7.84196 6.10218 8 6.5 8ZM19.071 3.515L20.485 4.929L4.93 20.485L3.516 19.071L19.07 3.515H19.071Z"
+                  fill="#161616" />
+              </svg>
+            </div>
+            <div class="products__tab">
+              <span>Станки для разделки кабеля</span>
+            </div>
+            <div class="products__tab">
+              <span>Сепараторы / Дробилки для кабеля</span>
+            </div>
+            <div class="products__tab">
+              <span>Запасные части</span>
+            </div>
+            <div class="products__tab">
+              <span>Станки для разделки теплообменников</span>
+            </div>
+            <div class="products__tab">
+              <span>Разделка радиаторов</span>
+            </div>
+            <div class="products__tab">
+              <span>Другое</span>
+            </div>
+          </div>
+          <div class="products__items">
+            <div class="products__items-inner">
+              <div class="product-item product-item--armor product-item--press">
+                <div class="product-item__top">
+                  <div class="product-item__top-mod">
+                    <div class="product-item-sale">-10%</div>
+                    <div class="product-item-armor">Броня</div>
+                    <div class="product-item-press">Пресс</div>
+                  </div>
+                  <img class="product-item__top-img" src="images/content/product/1.png" alt="">
+                </div>
+                <div class="product-item__content">
+                  <div class="product-item__content-name">
+                    S2-3 Автоматический мини
+                  </div>
+                  <ul class="product-item__info-list">
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Вес</span>
+                      <span class="product-item__info-num">13 кг</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Двигатель</span>
+                      <span class="product-item__info-num">180 Вт</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Диам. обраб.</span>
+                      <span class="product-item__info-num">от 1,5 до 25мм</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <div class="product-item__price-new">
+                      <span>34 990</span> ₽
+                    </div>
+                    <div class="product-item__price-old">
+                      <span>24 450</span> ₽
+                    </div>
+                  </div>
+                  <div class="product-item__bottom-box">
+                    <a class="product-item__link" href="product.html">Купить</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item product-item--sale product-item--armor product-item--press">
+                <div class="product-item__top">
+                  <div class="product-item__top-mod">
+                    <div class="product-item-sale">-10%</div>
+                    <div class="product-item-armor">Броня</div>
+                    <div class="product-item-press">Пресс</div>
+                  </div>
+                  <img class="product-item__top-img" src="images/content/product/2.png" alt="">
+                </div>
+                <div class="product-item__content">
+                  <div class="product-item__content-name">
+                    SG-006-1 Станок для разделки кабеля (Автоматический)
+                  </div>
+                  <ul class="product-item__info-list">
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Вес</span>
+                      <span class="product-item__info-num">13 кг</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Двигатель</span>
+                      <span class="product-item__info-num">180 Вт</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Диам. обраб.</span>
+                      <span class="product-item__info-num">от 1,5 до 25мм</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <div class="product-item__price-new">
+                      <span>34 990</span> ₽
+                    </div>
+                    <div class="product-item__price-old">
+                      <span>24 450</span> ₽
+                    </div>
+                  </div>
+                  <div class="product-item__bottom-box">
+                    <a class="product-item__link" href="product.html">Купить</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-item__top">
+                  <div class="product-item__top-mod">
+                    <div class="product-item-sale">-10%</div>
+                    <div class="product-item-armor">Броня</div>
+                    <div class="product-item-press">Пресс</div>
+                  </div>
+                  <img class="product-item__top-img" src="images/content/product/3.png" alt="">
+                </div>
+                <div class="product-item__content">
+                  <div class="product-item__content-name">
+                    SG-006-1 Станок для разделки кабеля (Автоматический)
+                  </div>
+                  <ul class="product-item__info-list">
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Вес</span>
+                      <span class="product-item__info-num">13 кг</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Двигатель</span>
+                      <span class="product-item__info-num">180 Вт</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Диам. обраб.</span>
+                      <span class="product-item__info-num">от 1,5 до 25мм</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <div class="product-item__price-new">
+                      <span>34 990</span> ₽
+                    </div>
+                    <div class="product-item__price-old">
+                      <span>24 450</span> ₽
+                    </div>
+                  </div>
+                  <div class="product-item__bottom-box">
+                    <a class="product-item__link" href="product.html">Купить</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item product-item--sale product-item--armor product-item--press">
+                <div class="product-item__top">
+                  <div class="product-item__top-mod">
+                    <div class="product-item-sale">-10%</div>
+                    <div class="product-item-armor">Броня</div>
+                    <div class="product-item-press">Пресс</div>
+                  </div>
+                  <img class="product-item__top-img" src="images/content/product/2.png" alt="">
+                </div>
+                <div class="product-item__content">
+                  <div class="product-item__content-name">
+                    SG-006-1 Станок для разделки кабеля (Автоматический)
+                  </div>
+                  <ul class="product-item__info-list">
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Вес</span>
+                      <span class="product-item__info-num">13 кг</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Двигатель</span>
+                      <span class="product-item__info-num">180 Вт</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Диам. обраб.</span>
+                      <span class="product-item__info-num">от 1,5 до 25мм</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <div class="product-item__price-new">
+                      <span>34 990</span> ₽
+                    </div>
+                    <div class="product-item__price-old">
+                      <span>24 450</span> ₽
+                    </div>
+                  </div>
+                  <div class="product-item__bottom-box">
+                    <a class="product-item__link" href="product.html">Купить</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-item__top">
+                  <div class="product-item__top-mod">
+                    <div class="product-item-sale">-10%</div>
+                    <div class="product-item-armor">Броня</div>
+                    <div class="product-item-press">Пресс</div>
+                  </div>
+                  <img class="product-item__top-img" src="images/content/product/3.png" alt="">
+                </div>
+                <div class="product-item__content">
+                  <div class="product-item__content-name">
+                    SG-006-1 Станок для разделки кабеля (Автоматический)
+                  </div>
+                  <ul class="product-item__info-list">
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Вес</span>
+                      <span class="product-item__info-num">13 кг</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Двигатель</span>
+                      <span class="product-item__info-num">180 Вт</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Диам. обраб.</span>
+                      <span class="product-item__info-num">от 1,5 до 25мм</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <div class="product-item__price-new">
+                      <span>34 990</span> ₽
+                    </div>
+                    <div class="product-item__price-old">
+                      <span>24 450</span> ₽
+                    </div>
+                  </div>
+                  <div class="product-item__bottom-box">
+                    <a class="product-item__link" href="product.html">Купить</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item product-item--armor product-item--press">
+                <div class="product-item__top">
+                  <div class="product-item__top-mod">
+                    <div class="product-item-sale">-10%</div>
+                    <div class="product-item-armor">Броня</div>
+                    <div class="product-item-press">Пресс</div>
+                  </div>
+                  <img class="product-item__top-img" src="images/content/product/1.png" alt="">
+                </div>
+                <div class="product-item__content">
+                  <div class="product-item__content-name">
+                    S2-3 Автоматический мини
+                  </div>
+                  <ul class="product-item__info-list">
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Вес</span>
+                      <span class="product-item__info-num">13 кг</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Двигатель</span>
+                      <span class="product-item__info-num">180 Вт</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Диам. обраб.</span>
+                      <span class="product-item__info-num">от 1,5 до 25мм</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <div class="product-item__price-new">
+                      <span>34 990</span> ₽
+                    </div>
+                    <div class="product-item__price-old">
+                      <span>24 450</span> ₽
+                    </div>
+                  </div>
+                  <div class="product-item__bottom-box">
+                    <a class="product-item__link" href="product.html">Купить</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item product-item--armor product-item--press">
+                <div class="product-item__top">
+                  <div class="product-item__top-mod">
+                    <div class="product-item-sale">-10%</div>
+                    <div class="product-item-armor">Броня</div>
+                    <div class="product-item-press">Пресс</div>
+                  </div>
+                  <img class="product-item__top-img" src="images/content/product/1.png" alt="">
+                </div>
+                <div class="product-item__content">
+                  <div class="product-item__content-name">
+                    S2-3 Автоматический мини
+                  </div>
+                  <ul class="product-item__info-list">
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Вес</span>
+                      <span class="product-item__info-num">13 кг</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Двигатель</span>
+                      <span class="product-item__info-num">180 Вт</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Диам. обраб.</span>
+                      <span class="product-item__info-num">от 1,5 до 25мм</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <div class="product-item__price-new">
+                      <span>34 990</span> ₽
+                    </div>
+                    <div class="product-item__price-old">
+                      <span>24 450</span> ₽
+                    </div>
+                  </div>
+                  <div class="product-item__bottom-box">
+                    <a class="product-item__link" href="product.html">Купить</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item product-item--sale product-item--armor product-item--press">
+                <div class="product-item__top">
+                  <div class="product-item__top-mod">
+                    <div class="product-item-sale">-10%</div>
+                    <div class="product-item-armor">Броня</div>
+                    <div class="product-item-press">Пресс</div>
+                  </div>
+                  <img class="product-item__top-img" src="images/content/product/2.png" alt="">
+                </div>
+                <div class="product-item__content">
+                  <div class="product-item__content-name">
+                    SG-006-1 Станок для разделки кабеля (Автоматический)
+                  </div>
+                  <ul class="product-item__info-list">
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Вес</span>
+                      <span class="product-item__info-num">13 кг</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Двигатель</span>
+                      <span class="product-item__info-num">180 Вт</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Диам. обраб.</span>
+                      <span class="product-item__info-num">от 1,5 до 25мм</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <div class="product-item__price-new">
+                      <span>34 990</span> ₽
+                    </div>
+                    <div class="product-item__price-old">
+                      <span>24 450</span> ₽
+                    </div>
+                  </div>
+                  <div class="product-item__bottom-box">
+                    <a class="product-item__link" href="product.html">Купить</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-item__top">
+                  <div class="product-item__top-mod">
+                    <div class="product-item-sale">-10%</div>
+                    <div class="product-item-armor">Броня</div>
+                    <div class="product-item-press">Пресс</div>
+                  </div>
+                  <img class="product-item__top-img" src="images/content/product/3.png" alt="">
+                </div>
+                <div class="product-item__content">
+                  <div class="product-item__content-name">
+                    SG-006-1 Станок для разделки кабеля (Автоматический)
+                  </div>
+                  <ul class="product-item__info-list">
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Вес</span>
+                      <span class="product-item__info-num">13 кг</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Двигатель</span>
+                      <span class="product-item__info-num">180 Вт</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Диам. обраб.</span>
+                      <span class="product-item__info-num">от 1,5 до 25мм</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <div class="product-item__price-new">
+                      <span>34 990</span> ₽
+                    </div>
+                    <div class="product-item__price-old">
+                      <span>24 450</span> ₽
+                    </div>
+                  </div>
+                  <div class="product-item__bottom-box">
+                    <a class="product-item__link" href="product.html">Купить</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-item__top">
+                  <div class="product-item__top-mod">
+                    <div class="product-item-sale">-10%</div>
+                    <div class="product-item-armor">Броня</div>
+                    <div class="product-item-press">Пресс</div>
+                  </div>
+                  <img class="product-item__top-img" src="images/content/product/3.png" alt="">
+                </div>
+                <div class="product-item__content">
+                  <div class="product-item__content-name">
+                    SG-006-1 Станок для разделки кабеля (Автоматический)
+                  </div>
+                  <ul class="product-item__info-list">
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Вес</span>
+                      <span class="product-item__info-num">13 кг</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Двигатель</span>
+                      <span class="product-item__info-num">180 Вт</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Диам. обраб.</span>
+                      <span class="product-item__info-num">от 1,5 до 25мм</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <div class="product-item__price-new">
+                      <span>34 990</span> ₽
+                    </div>
+                    <div class="product-item__price-old">
+                      <span>24 450</span> ₽
+                    </div>
+                  </div>
+                  <div class="product-item__bottom-box">
+                    <a class="product-item__link" href="product.html">Купить</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-item__top">
+                  <div class="product-item__top-mod">
+                    <div class="product-item-sale">-10%</div>
+                    <div class="product-item-armor">Броня</div>
+                    <div class="product-item-press">Пресс</div>
+                  </div>
+                  <img class="product-item__top-img" src="images/content/product/3.png" alt="">
+                </div>
+                <div class="product-item__content">
+                  <div class="product-item__content-name">
+                    SG-006-1 Станок для разделки кабеля (Автоматический)
+                  </div>
+                  <ul class="product-item__info-list">
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Вес</span>
+                      <span class="product-item__info-num">13 кг</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Двигатель</span>
+                      <span class="product-item__info-num">180 Вт</span>
+                    </li>
+                    <li class="product-item__info-item">
+                      <span class="product-item__info-name">Диам. обраб.</span>
+                      <span class="product-item__info-num">от 1,5 до 25мм</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <div class="product-item__price-new">
+                      <span>34 990</span> ₽
+                    </div>
+                    <div class="product-item__price-old">
+                      <span>24 450</span> ₽
+                    </div>
+                  </div>
+                  <div class="product-item__bottom-box">
+                    <a class="product-item__link" href="product.html">Купить</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="products__items-btnbox">
+              <button class="show-more">Показать ещё</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feedback-form">
+      <div class="container">
+        <div class="feedback-form__inner">
+          <div class="feedback-form__content">
+            <h2 class="feedback-form__title">
+              Будем рады ответить на все интересующие вопросы
+            </h2>
+            <p class="feedback-form__text">
+              Оставьте заявку и мы вам вскоре позвоним и проконсультируем по всем интересующим вопросам
+            </p>
+          </div>
+          <form class="feedback-form__form" action="catalog.html#">
+            <input class="feedback-form__input" type="text" placeholder="Ваше имя" required>
+            <input class="feedback-form__input" type="tel" data-phone-pattern placeholder="+ 7 (___) ___ __ __" required>
+            <input class="feedback-form__input" type="email" placeholder="E-mail (необязательно)">
+            <button class="feedback-form__btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a class="logo" href="index.html">
+          <img src="images/logo.png" alt="Логотип">
+        </a>
+      </div>
+      <div class="footer__content">
+        <div class="footer__info">
+          <address class="footer__info-address">
+            Тураевское шоссе дом 17, д. Островцы, Раменский район, МО, Россия
+          </address>
+          <div class="footer__info-box">
+            <a class="footer__box-link" href="tel:+78007073101">+7 (800) 707-31-01</a>
+            <a class="footer__box-link" href="mailto:okoprom@gmail.com">okoprom@gmail.com</a>
+          </div>
+          <div class="footer__info-links">
+            <a class="footer__link" href="catalog.html#">Whatsapp</a>
+            <a class="footer__link" href="catalog.html#">Telegram</a>
+          </div>
+          <div class="footer__info-socials">
+            <div class="footer__socials-box">
+              <a class="footer__socials-link" href="catalog.html#">
+                <img src="images/icons/instagram.svg" alt="Логотип компании Instagram">
+              </a>
+              <a class="footer__socials-link" href="catalog.html#">
+                <img src="images/icons/youtube.svg" alt="Логотип компании YouTube">
+              </a>
+            </div>
+            <p class="footer__socials-descr">
+              Подписывайтесь на нас в социальных сетях
+            </p>
+          </div>
+        </div>
+        <div class="footer__wrapper">
+          <div class="footer__nav">
+            <div class="footer__nav-title">
+              Наша продукция
+            </div>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="catalog.html">Станки для разделки кабеля</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="catalog.html">Сепараторы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="catalog.html">Станок для разделки теплообменников</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="catalog.html">Разделка радиаторов</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="catalog.html">Запасные части</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="catalog.html">Другое</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav">
+            <div class="footer__nav-title">
+              Информация
+            </div>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="delivery.html">Доставка и оплата</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="warranty.html">Гарантия</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="catalog.html#">Служба контроля качества</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="catalog.html">Наше производство</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="about.html">О компании</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__copy">
+          Интернет магазин "Окопром" © 2021 Все права защищены
+        </div>
+        <a class="footer__bottom-link" href="catalog.html#">
+          Политика конфиденциальности
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
